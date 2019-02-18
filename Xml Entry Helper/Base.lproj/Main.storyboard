@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Xml_Entry_Helper" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="XML Entry Helper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -703,15 +704,180 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Xml_Entry_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="212"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="leading" yPlacement="fill" rowAlignment="none" rowSpacing="7" columnSpacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-tj-vkF">
+                                <rect key="frame" x="20" y="57" width="440" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="gio-nL-2Bm"/>
+                                </constraints>
+                                <rows>
+                                    <gridRow id="Ncq-Q7-xXc"/>
+                                    <gridRow id="xX7-Bq-kks"/>
+                                    <gridRow id="TuE-ll-W0m"/>
+                                    <gridRow id="XkB-aP-zpG"/>
+                                    <gridRow id="MBz-U9-bEF"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn xPlacement="trailing" width="60" id="MQu-Ui-EH5"/>
+                                    <gridColumn xPlacement="fill" id="11L-jr-5eL"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="Ncq-Q7-xXc" column="MQu-Ui-EH5" id="UFp-N2-gyK">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kXk-Bo-YYy">
+                                            <rect key="frame" x="31" y="113" width="31" height="22"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Title" id="Pic-aZ-TSe">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="Ncq-Q7-xXc" column="11L-jr-5eL" id="Vhx-oZ-auR">
+                                        <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fqX-gW-8GX">
+                                            <rect key="frame" x="90" y="113" width="350" height="22"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="bi3-K6-6Gw">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="xX7-Bq-kks" column="MQu-Ui-EH5" id="yb7-14-Cop">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B51-QQ-nw2">
+                                            <rect key="frame" x="2" y="85" width="60" height="21"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Directors" id="5vs-5P-Lon">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="xX7-Bq-kks" column="11L-jr-5eL" id="d21-cy-Vpy">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8HJ-gB-HR0">
+                                            <rect key="frame" x="84" y="78" width="362" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rq2-FH-fM8">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onDirectorsButtonClicked:" target="XfG-lQ-9wD" id="WL7-Gd-985"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="TuE-ll-W0m" column="MQu-Ui-EH5" id="JYC-JN-jHW">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kCg-u2-8Ue">
+                                            <rect key="frame" x="14" y="57" width="48" height="21"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Genres" id="ycx-6W-64r">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="TuE-ll-W0m" column="11L-jr-5eL" id="16i-ZA-3Ds">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-en-CFK">
+                                            <rect key="frame" x="84" y="50" width="362" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gZO-0j-Dce">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onGenresButtonClicked:" target="XfG-lQ-9wD" id="dHZ-9c-EvY"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="XkB-aP-zpG" column="MQu-Ui-EH5" id="6LY-iL-wMS">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SvT-mC-Ukd">
+                                            <rect key="frame" x="34" y="28" width="28" height="22"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Plot" id="eiX-7j-P2J">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="XkB-aP-zpG" column="11L-jr-5eL" id="lt2-ug-wvq">
+                                        <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZgK-oR-UN3">
+                                            <rect key="frame" x="90" y="28" width="350" height="22"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="IpK-3f-ldG">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="MBz-U9-bEF" column="MQu-Ui-EH5" id="gM7-t7-y2d">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XA8-iG-v0m">
+                                            <rect key="frame" x="30" y="0.0" width="32" height="21"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Cast" id="9CS-vC-05M">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="MBz-U9-bEF" column="11L-jr-5eL" id="6Jt-Ur-9Aa">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PIG-Ql-OrK">
+                                            <rect key="frame" x="84" y="-7" width="362" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rtB-zD-ZIh">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="onCastButtonClicked:" target="XfG-lQ-9wD" id="2A8-Ow-jfQ"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k0i-Zo-JqE">
+                                <rect key="frame" x="339" y="13" width="127" height="32"/>
+                                <buttonCell key="cell" type="push" title="Generate XML" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7fN-N4-2se">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onGenerateXmlButtonClicked:" target="XfG-lQ-9wD" id="ze6-7R-RVP"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3YD-hH-00B">
+                                <rect key="frame" x="14" y="13" width="163" height="32"/>
+                                <buttonCell key="cell" type="push" title="Show Added Movies" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3Y4-fm-GBm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k0i-Zo-JqE" secondAttribute="bottom" constant="20" id="0fA-PS-GTN"/>
+                            <constraint firstItem="k0i-Zo-JqE" firstAttribute="top" secondItem="XcR-tj-vkF" secondAttribute="bottom" constant="16" id="5UK-ZE-iVb"/>
+                            <constraint firstItem="3YD-hH-00B" firstAttribute="top" secondItem="XcR-tj-vkF" secondAttribute="bottom" constant="16" id="8hK-jV-MIc"/>
+                            <constraint firstItem="k0i-Zo-JqE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3YD-hH-00B" secondAttribute="trailing" constant="16" id="Du2-3Y-YkY"/>
+                            <constraint firstItem="XcR-tj-vkF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Gcs-8r-LFq"/>
+                            <constraint firstAttribute="trailing" secondItem="XcR-tj-vkF" secondAttribute="trailing" constant="20" id="OZh-Ke-Yoa"/>
+                            <constraint firstItem="XcR-tj-vkF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="ZOi-ui-iWK"/>
+                            <constraint firstAttribute="trailing" secondItem="k0i-Zo-JqE" secondAttribute="trailing" constant="20" id="cCe-zQ-qEX"/>
+                            <constraint firstAttribute="bottom" secondItem="3YD-hH-00B" secondAttribute="bottom" constant="20" id="tKc-2u-T1w"/>
+                            <constraint firstItem="3YD-hH-00B" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="vg5-wF-lhX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="castButton" destination="PIG-Ql-OrK" id="R3x-ZB-B5d"/>
+                        <outlet property="directorsButton" destination="8HJ-gB-HR0" id="UYB-n9-3wm"/>
+                        <outlet property="generateXmlButton" destination="k0i-Zo-JqE" id="tJU-zk-fLg"/>
+                        <outlet property="genresButton" destination="bAM-en-CFK" id="5er-D6-uqQ"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="750"/>
         </scene>
     </scenes>
 </document>

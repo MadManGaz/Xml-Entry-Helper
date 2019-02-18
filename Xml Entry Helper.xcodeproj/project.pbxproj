@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5F666923E34EDA4ADC773B /* Pods_Xml_Entry_HelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEA0D9AB99ADC9E738A87D1 /* Pods_Xml_Entry_HelperTests.framework */; };
+		9B109C82AAEAE7746F17EFF5 /* Pods_Xml_Entry_HelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C1D9B65B33B5C06A7A1899 /* Pods_Xml_Entry_HelperUITests.framework */; };
+		9D070268221A4C4B00E8E823 /* CastContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D070266221A4C4B00E8E823 /* CastContentViewController.swift */; };
+		9D070269221A4C4B00E8E823 /* CastContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D070267221A4C4B00E8E823 /* CastContentViewController.xib */; };
+		9D07026B221A4FCC00E8E823 /* FilmXmlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D07026A221A4FCC00E8E823 /* FilmXmlTool.swift */; };
+		9D07026E221A544000E8E823 /* TestingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D07026C221A544000E8E823 /* TestingContentViewController.swift */; };
+		9D07026F221A544000E8E823 /* TestingContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D07026D221A544000E8E823 /* TestingContentViewController.xib */; };
 		9D26FA8E22189F52006C11F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FA8D22189F52006C11F9 /* AppDelegate.swift */; };
 		9D26FA9022189F52006C11F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FA8F22189F52006C11F9 /* ViewController.swift */; };
 		9D26FA9222189F53006C11F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D26FA9122189F53006C11F9 /* Assets.xcassets */; };
 		9D26FA9522189F53006C11F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26FA9322189F53006C11F9 /* Main.storyboard */; };
 		9D26FAA122189F53006C11F9 /* Xml_Entry_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FAA022189F53006C11F9 /* Xml_Entry_HelperTests.swift */; };
 		9D26FAAC22189F53006C11F9 /* Xml_Entry_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FAAB22189F53006C11F9 /* Xml_Entry_HelperUITests.swift */; };
+		9D26FABA22189FB4006C11F9 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FAB922189FB4006C11F9 /* Film.swift */; };
+		9D26FAC2221A38BF006C11F9 /* DirectorsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FAC0221A38BF006C11F9 /* DirectorsContentViewController.swift */; };
+		9D26FAC3221A38BF006C11F9 /* DirectorsContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D26FAC1221A38BF006C11F9 /* DirectorsContentViewController.xib */; };
+		9D26FAC6221A4A2E006C11F9 /* GenresContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FAC4221A4A2E006C11F9 /* GenresContentViewController.swift */; };
+		9D26FAC7221A4A2E006C11F9 /* GenresContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D26FAC5221A4A2E006C11F9 /* GenresContentViewController.xib */; };
+		AA20DDF2D69B35180A55A885 /* Pods_Xml_Entry_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029C38E5CADD79D07A303E21 /* Pods_Xml_Entry_Helper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029C38E5CADD79D07A303E21 /* Pods_Xml_Entry_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xml_Entry_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2668926441692298C8E0E61D /* Pods-Xml Entry Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry Helper.release.xcconfig"; path = "Target Support Files/Pods-Xml Entry Helper/Pods-Xml Entry Helper.release.xcconfig"; sourceTree = "<group>"; };
+		28C1D9B65B33B5C06A7A1899 /* Pods_Xml_Entry_HelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xml_Entry_HelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BC970283B1474A038B9F11 /* Pods-Xml Entry HelperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry HelperUITests.debug.xcconfig"; path = "Target Support Files/Pods-Xml Entry HelperUITests/Pods-Xml Entry HelperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		74A711885EAB683E30A886B3 /* Pods-Xml Entry HelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry HelperTests.release.xcconfig"; path = "Target Support Files/Pods-Xml Entry HelperTests/Pods-Xml Entry HelperTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D070266221A4C4B00E8E823 /* CastContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastContentViewController.swift; sourceTree = "<group>"; };
+		9D070267221A4C4B00E8E823 /* CastContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastContentViewController.xib; sourceTree = "<group>"; };
+		9D07026A221A4FCC00E8E823 /* FilmXmlTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmXmlTool.swift; sourceTree = "<group>"; };
+		9D07026C221A544000E8E823 /* TestingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingContentViewController.swift; sourceTree = "<group>"; };
+		9D07026D221A544000E8E823 /* TestingContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestingContentViewController.xib; sourceTree = "<group>"; };
 		9D26FA8A22189F52006C11F9 /* Xml Entry Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xml Entry Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D26FA8D22189F52006C11F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D26FA8F22189F52006C11F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +69,15 @@
 		9D26FAA722189F53006C11F9 /* Xml Entry HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xml Entry HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D26FAAB22189F53006C11F9 /* Xml_Entry_HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xml_Entry_HelperUITests.swift; sourceTree = "<group>"; };
 		9D26FAAD22189F53006C11F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D26FAB922189FB4006C11F9 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		9D26FAC0221A38BF006C11F9 /* DirectorsContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorsContentViewController.swift; sourceTree = "<group>"; };
+		9D26FAC1221A38BF006C11F9 /* DirectorsContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectorsContentViewController.xib; sourceTree = "<group>"; };
+		9D26FAC4221A4A2E006C11F9 /* GenresContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresContentViewController.swift; sourceTree = "<group>"; };
+		9D26FAC5221A4A2E006C11F9 /* GenresContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresContentViewController.xib; sourceTree = "<group>"; };
+		AFEA0D9AB99ADC9E738A87D1 /* Pods_Xml_Entry_HelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xml_Entry_HelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A1CC037382277EE42B1252 /* Pods-Xml Entry HelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry HelperTests.debug.xcconfig"; path = "Target Support Files/Pods-Xml Entry HelperTests/Pods-Xml Entry HelperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E85152614DAFA7409DC507CD /* Pods-Xml Entry HelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry HelperUITests.release.xcconfig"; path = "Target Support Files/Pods-Xml Entry HelperUITests/Pods-Xml Entry HelperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD7400DF025CA2A51D063F92 /* Pods-Xml Entry Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry Helper.debug.xcconfig"; path = "Target Support Files/Pods-Xml Entry Helper/Pods-Xml Entry Helper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA20DDF2D69B35180A55A885 /* Pods_Xml_Entry_Helper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5F666923E34EDA4ADC773B /* Pods_Xml_Entry_HelperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +101,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B109C82AAEAE7746F17EFF5 /* Pods_Xml_Entry_HelperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4C139956C0A07A64E9A5CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD7400DF025CA2A51D063F92 /* Pods-Xml Entry Helper.debug.xcconfig */,
+				2668926441692298C8E0E61D /* Pods-Xml Entry Helper.release.xcconfig */,
+				E7A1CC037382277EE42B1252 /* Pods-Xml Entry HelperTests.debug.xcconfig */,
+				74A711885EAB683E30A886B3 /* Pods-Xml Entry HelperTests.release.xcconfig */,
+				30BC970283B1474A038B9F11 /* Pods-Xml Entry HelperUITests.debug.xcconfig */,
+				E85152614DAFA7409DC507CD /* Pods-Xml Entry HelperUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D26FA8122189F52006C11F9 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +128,8 @@
 				9D26FA9F22189F53006C11F9 /* Xml Entry HelperTests */,
 				9D26FAAA22189F53006C11F9 /* Xml Entry HelperUITests */,
 				9D26FA8B22189F52006C11F9 /* Products */,
+				3B4C139956C0A07A64E9A5CF /* Pods */,
+				FE0219D6DC3B26713A3F00C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,12 +146,22 @@
 		9D26FA8C22189F52006C11F9 /* Xml Entry Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9D26FAC0221A38BF006C11F9 /* DirectorsContentViewController.swift */,
+				9D26FAC1221A38BF006C11F9 /* DirectorsContentViewController.xib */,
+				9D26FAC4221A4A2E006C11F9 /* GenresContentViewController.swift */,
+				9D26FAC5221A4A2E006C11F9 /* GenresContentViewController.xib */,
 				9D26FA8D22189F52006C11F9 /* AppDelegate.swift */,
 				9D26FA8F22189F52006C11F9 /* ViewController.swift */,
 				9D26FA9122189F53006C11F9 /* Assets.xcassets */,
 				9D26FA9322189F53006C11F9 /* Main.storyboard */,
 				9D26FA9622189F53006C11F9 /* Info.plist */,
 				9D26FA9722189F53006C11F9 /* Xml_Entry_Helper.entitlements */,
+				9D26FAB922189FB4006C11F9 /* Film.swift */,
+				9D070266221A4C4B00E8E823 /* CastContentViewController.swift */,
+				9D070267221A4C4B00E8E823 /* CastContentViewController.xib */,
+				9D07026A221A4FCC00E8E823 /* FilmXmlTool.swift */,
+				9D07026C221A544000E8E823 /* TestingContentViewController.swift */,
+				9D07026D221A544000E8E823 /* TestingContentViewController.xib */,
 			);
 			path = "Xml Entry Helper";
 			sourceTree = "<group>";
@@ -124,6 +184,16 @@
 			path = "Xml Entry HelperUITests";
 			sourceTree = "<group>";
 		};
+		FE0219D6DC3B26713A3F00C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029C38E5CADD79D07A303E21 /* Pods_Xml_Entry_Helper.framework */,
+				AFEA0D9AB99ADC9E738A87D1 /* Pods_Xml_Entry_HelperTests.framework */,
+				28C1D9B65B33B5C06A7A1899 /* Pods_Xml_Entry_HelperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D26FAB022189F53006C11F9 /* Build configuration list for PBXNativeTarget "Xml Entry Helper" */;
 			buildPhases = (
+				98F5F919B4FB81AA6A148639 /* [CP] Check Pods Manifest.lock */,
 				9D26FA8622189F52006C11F9 /* Sources */,
 				9D26FA8722189F52006C11F9 /* Frameworks */,
 				9D26FA8822189F52006C11F9 /* Resources */,
+				EA977A7530280A067EA04A57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D26FAB322189F53006C11F9 /* Build configuration list for PBXNativeTarget "Xml Entry HelperTests" */;
 			buildPhases = (
+				A9128BAE9B036A4469F7D279 /* [CP] Check Pods Manifest.lock */,
 				9D26FA9822189F53006C11F9 /* Sources */,
 				9D26FA9922189F53006C11F9 /* Frameworks */,
 				9D26FA9A22189F53006C11F9 /* Resources */,
@@ -166,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D26FAB622189F53006C11F9 /* Build configuration list for PBXNativeTarget "Xml Entry HelperUITests" */;
 			buildPhases = (
+				E849035DEB26B5BD8D76F17C /* [CP] Check Pods Manifest.lock */,
 				9D26FAA322189F53006C11F9 /* Sources */,
 				9D26FAA422189F53006C11F9 /* Frameworks */,
 				9D26FAA522189F53006C11F9 /* Resources */,
@@ -228,7 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D07026F221A544000E8E823 /* TestingContentViewController.xib in Resources */,
+				9D26FAC3221A38BF006C11F9 /* DirectorsContentViewController.xib in Resources */,
 				9D26FA9222189F53006C11F9 /* Assets.xcassets in Resources */,
+				9D26FAC7221A4A2E006C11F9 /* GenresContentViewController.xib in Resources */,
+				9D070269221A4C4B00E8E823 /* CastContentViewController.xib in Resources */,
 				9D26FA9522189F53006C11F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,13 +327,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98F5F919B4FB81AA6A148639 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xml Entry Helper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9128BAE9B036A4469F7D279 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xml Entry HelperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E849035DEB26B5BD8D76F17C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xml Entry HelperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA977A7530280A067EA04A57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xml Entry Helper/Pods-Xml Entry Helper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlightr.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xml Entry Helper/Pods-Xml Entry Helper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D26FA8622189F52006C11F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D07026B221A4FCC00E8E823 /* FilmXmlTool.swift in Sources */,
+				9D07026E221A544000E8E823 /* TestingContentViewController.swift in Sources */,
+				9D26FAC2221A38BF006C11F9 /* DirectorsContentViewController.swift in Sources */,
 				9D26FA9022189F52006C11F9 /* ViewController.swift in Sources */,
+				9D26FABA22189FB4006C11F9 /* Film.swift in Sources */,
+				9D070268221A4C4B00E8E823 /* CastContentViewController.swift in Sources */,
 				9D26FA8E22189F52006C11F9 /* AppDelegate.swift in Sources */,
+				9D26FAC6221A4A2E006C11F9 /* GenresContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,9 +594,11 @@
 		};
 		9D26FAB122189F53006C11F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7400DF025CA2A51D063F92 /* Pods-Xml Entry Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Xml Entry Helper/Xml_Entry_Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 42RXLCPKL9;
@@ -432,15 +609,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.mrgarymoore.Xml-Entry-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		9D26FAB222189F53006C11F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2668926441692298C8E0E61D /* Pods-Xml Entry Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Xml Entry Helper/Xml_Entry_Helper.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 42RXLCPKL9;
@@ -451,12 +631,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.mrgarymoore.Xml-Entry-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		9D26FAB422189F53006C11F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A1CC037382277EE42B1252 /* Pods-Xml Entry HelperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -478,6 +660,7 @@
 		};
 		9D26FAB522189F53006C11F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A711885EAB683E30A886B3 /* Pods-Xml Entry HelperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +682,7 @@
 		};
 		9D26FAB722189F53006C11F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BC970283B1474A038B9F11 /* Pods-Xml Entry HelperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +703,7 @@
 		};
 		9D26FAB822189F53006C11F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E85152614DAFA7409DC507CD /* Pods-Xml Entry HelperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
