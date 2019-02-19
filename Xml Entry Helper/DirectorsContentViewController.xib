@@ -70,12 +70,12 @@ DQ
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="dismissController:" target="-2" id="3Nt-mN-GQH"/>
+                        <action selector="onSubmitButtonClicked:" target="-2" id="aYi-6w-JhH"/>
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="UzW-sW-8hN">
                     <rect key="frame" x="18" y="217" width="444" height="17"/>
-                    <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="Mrj-w7-1zm">
+                    <textFieldCell key="cell" selectable="YES" title="Multiline Label" allowsEditingTextAttributes="YES" id="Mrj-w7-1zm">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

@@ -9,14 +9,16 @@
 import Foundation
 
 class FilmXmlTool {
-    var root: XMLElement
-    var xml: XMLDocument
-    var xmlString: String?
+    private var root: XMLElement
+    private var xml: XMLDocument
+    private var dtd: XMLDTD
     private var film: Film?
+    var xmlString: String?
     
     init() {
         root = XMLElement(name: "root")
         xml = XMLDocument(rootElement: root)
+        dtd = XMLDTD()
         
         root.addChild(XMLElement(name: "foo", stringValue: "bar"))
         
@@ -27,20 +29,20 @@ class FilmXmlTool {
         self.film = film
         root = XMLElement(name: "film")
         xml = XMLDocument(rootElement: root)
+        dtd = XMLDTD()
+        
         
         root.addChild(XMLElement(name: "title", stringValue: film.title))
         
         let directors = XMLElement(name: "directors")
         for director in film.directors {
-            directors.addChild(XMLElement(name: "director",
-                                          stringValue: director))
+            directors.addChild(XMLElement(name: "director", stringValue: director))
         }
         root.addChild(directors)
         
         let genres = XMLElement(name: "genres")
         for genre in film.genres {
-            genres.addChild(XMLElement(name: "genre",
-                                       stringValue: genre))
+            genres.addChild(XMLElement(name: "genre", stringValue: genre))
         }
         root.addChild(genres)
         
@@ -49,10 +51,8 @@ class FilmXmlTool {
         let cast = XMLElement(name: "cast")
         for performer in film.cast {
             let xmlPerformer = XMLElement(name: "performer")
-            xmlPerformer.addChild(XMLElement(name: "actor",
-                                             stringValue: performer.actor))
-            xmlPerformer.addChild(XMLElement(name: "role",
-                                             stringValue: performer.role))
+            xmlPerformer.addChild(XMLElement(name: "actor", stringValue: performer.actor))
+            xmlPerformer.addChild(XMLElement(name: "role", stringValue: performer.role))
             cast.addChild(xmlPerformer)
         }
         root.addChild(cast)

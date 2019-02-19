@@ -9,22 +9,20 @@
 import Cocoa
 import Highlightr
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSPopoverDelegate {
     @IBOutlet weak var directorsButton: NSButton!
     @IBOutlet weak var genresButton: NSButton!
     @IBOutlet weak var castButton: NSButton!
     @IBOutlet weak var generateXmlButton: NSButton!
     
-    var directorsPopoverDelegate = DirectorsDelegate()
-    var genresPopoverDelegate = GenresPopoverDelegate()
-    var castPopoverDelegate = CastPopoverDelegate()
-    var xmlButtonPopoverDelegate = XmlButtonPopoverDelegate()
-    
-    var film: Film!
+    public static var globalFilm = Film()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        film = Film()
+    }
+    
+    func popoverShouldDetach(_ popover: NSPopover) -> Bool {
+        return true
     }
     
     @IBAction func onDirectorsButtonClicked(_ sender: NSButton) {
@@ -32,7 +30,7 @@ class ViewController: NSViewController {
         let directorsContentViewController = DirectorsContentViewController()
         directorsPopover.behavior = .semitransient
         directorsPopover.contentViewController = directorsContentViewController
-        directorsPopover.delegate = directorsPopoverDelegate
+        directorsPopover.delegate = self
         
         directorsPopover.show(relativeTo: directorsButton.visibleRect,
                               of: directorsButton,
@@ -44,6 +42,7 @@ class ViewController: NSViewController {
         genresPopover.behavior = .semitransient
         genresPopover.animates = true
         genresPopover.contentViewController = GenresContentViewController()
+        genresPopover.delegate = self
         
         genresPopover.show(relativeTo: genresButton.visibleRect,
                            of: genresButton,
@@ -55,7 +54,7 @@ class ViewController: NSViewController {
         castPopover.behavior = .semitransient
         castPopover.animates = true
         castPopover.contentViewController = CastContentViewController()
-        castPopover.delegate = castPopoverDelegate
+        castPopover.delegate = self
         
         castPopover.show(relativeTo: castButton.visibleRect,
                          of: castButton,
@@ -68,20 +67,18 @@ class ViewController: NSViewController {
         testingPopover.behavior = .semitransient
         testingPopover.animates = true
         testingPopover.contentViewController = testingContentViewController
-        testingPopover.delegate = xmlButtonPopoverDelegate
+        testingPopover.delegate = self
         
         testingPopover.show(relativeTo: generateXmlButton.visibleRect,
                             of: generateXmlButton,
                             preferredEdge: .maxX)
         
-        let film = Film()
-        let filmXmlTool = FilmXmlTool(film: film)
+        let filmXmlTool = FilmXmlTool(film: ViewController.globalFilm)
         
         if let xmlString = filmXmlTool.xmlString {
             let highlighter = Highlightr()
             highlighter?.setTheme(to: "xcode")
-            if let highlightedXmlString = highlighter!.highlight(xmlString,
-                                                                 as: "xml") {
+            if let highlightedXmlString = highlighter!.highlight(xmlString, as: "xml") {
                 testingContentViewController
                     .scratchpadLabel
                     .attributedStringValue = highlightedXmlString
@@ -90,46 +87,6 @@ class ViewController: NSViewController {
                     .scratchpadLabel
                     .stringValue = xmlString
             }
-        }
-    }
-    
-    class DirectorsDelegate: NSObject, NSPopoverDelegate {
-        func popoverShouldDetach(_ popover: NSPopover) -> Bool {
-            return true
-        }
-        
-        func popoverWillClose(_ notification: Notification) {
-            
-        }
-    }
-    
-    class GenresPopoverDelegate: NSObject, NSPopoverDelegate {
-        func popoverShouldDetach(_ popover: NSPopover) -> Bool {
-            return true
-        }
-        
-        func popoverWillClose(_ notification: Notification) {
-            
-        }
-    }
-    
-    class CastPopoverDelegate: NSObject, NSPopoverDelegate {
-        func popoverShouldDetach(_ popover: NSPopover) -> Bool {
-            return true
-        }
-        
-        func popoverWillClose(_ notification: Notification) {
-            
-        }
-    }
-    
-    class XmlButtonPopoverDelegate: NSObject, NSPopoverDelegate {
-        func popoverShouldDetach(_ popover: NSPopover) -> Bool {
-            return true
-        }
-        
-        func popoverWillClose(_ notification: Notification) {
-            
         }
     }
 }

@@ -13,8 +13,10 @@ class DirectorsContentViewController: NSViewController, NSPopoverDelegate {
     @IBOutlet weak var directorTextField: NSTextField!
     @IBOutlet weak var directorsLabel: NSTextField!
     
-    var directors = [String]()
-    var highlightedDirectorsXmlString: NSMutableAttributedString!
+    private var delegate: FilmDelegate?
+    
+    private var directors = [String]()
+    private var highlightedDirectorsXmlString: NSMutableAttributedString!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +25,17 @@ class DirectorsContentViewController: NSViewController, NSPopoverDelegate {
         highlightedDirectorsXmlString = NSMutableAttributedString()
     }
     
-    func popoverShouldDetach(_ popover: NSPopover) -> Bool {
-        return true
-    }
-    
     @IBAction func onAddButtonClicked(_ sender: NSButton) {
-        if (directorTextField.stringValue != "") {
+        if directorTextField.stringValue != "" {
             let highlightr = Highlightr()
             highlightr?.setTheme(to: "xcode")
-            let stringToHighlight =
-                "<director>\(directorTextField.stringValue)</director>"
             
-            if let highlightedString = highlightr!.highlight(stringToHighlight,
-                                                             as: "xml") {
+            let stringToHighlight = "<director>\(directorTextField.stringValue)</director>"
+            
+            if let highlightedString = highlightr!.highlight(stringToHighlight, as: "xml") {
                 highlightedDirectorsXmlString.append(highlightedString)
-                highlightedDirectorsXmlString
-                    .append(NSAttributedString(string: "\n"))
-                directorsLabel.attributedStringValue =
-                    highlightedDirectorsXmlString
+                highlightedDirectorsXmlString.append(NSAttributedString(string: "\n"))
+                directorsLabel.attributedStringValue = highlightedDirectorsXmlString
             } else {
                 directorsLabel.stringValue = stringToHighlight
             }
@@ -48,5 +43,9 @@ class DirectorsContentViewController: NSViewController, NSPopoverDelegate {
             directors.append(directorTextField.stringValue)
             directorTextField.stringValue = ""
         }
+    }
+    
+    @IBAction func onSubmitButtonClicked(_ sender: NSButton) {
+        
     }
 }

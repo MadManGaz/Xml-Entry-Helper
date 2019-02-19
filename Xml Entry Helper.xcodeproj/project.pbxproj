@@ -25,6 +25,7 @@
 		9D26FAC3221A38BF006C11F9 /* DirectorsContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D26FAC1221A38BF006C11F9 /* DirectorsContentViewController.xib */; };
 		9D26FAC6221A4A2E006C11F9 /* GenresContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26FAC4221A4A2E006C11F9 /* GenresContentViewController.swift */; };
 		9D26FAC7221A4A2E006C11F9 /* GenresContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D26FAC5221A4A2E006C11F9 /* GenresContentViewController.xib */; };
+		9D7EC534221C4B840084889F /* FilmDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7EC533221C4B840084889F /* FilmDelegate.swift */; };
 		AA20DDF2D69B35180A55A885 /* Pods_Xml_Entry_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029C38E5CADD79D07A303E21 /* Pods_Xml_Entry_Helper.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		9D26FAC1221A38BF006C11F9 /* DirectorsContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectorsContentViewController.xib; sourceTree = "<group>"; };
 		9D26FAC4221A4A2E006C11F9 /* GenresContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresContentViewController.swift; sourceTree = "<group>"; };
 		9D26FAC5221A4A2E006C11F9 /* GenresContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresContentViewController.xib; sourceTree = "<group>"; };
+		9D7EC533221C4B840084889F /* FilmDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDelegate.swift; sourceTree = "<group>"; };
 		AFEA0D9AB99ADC9E738A87D1 /* Pods_Xml_Entry_HelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xml_Entry_HelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A1CC037382277EE42B1252 /* Pods-Xml Entry HelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry HelperTests.debug.xcconfig"; path = "Target Support Files/Pods-Xml Entry HelperTests/Pods-Xml Entry HelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E85152614DAFA7409DC507CD /* Pods-Xml Entry HelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xml Entry HelperUITests.release.xcconfig"; path = "Target Support Files/Pods-Xml Entry HelperUITests/Pods-Xml Entry HelperUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				9D07026A221A4FCC00E8E823 /* FilmXmlTool.swift */,
 				9D07026C221A544000E8E823 /* TestingContentViewController.swift */,
 				9D07026D221A544000E8E823 /* TestingContentViewController.xib */,
+				9D7EC533221C4B840084889F /* FilmDelegate.swift */,
 			);
 			path = "Xml Entry Helper";
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			files = (
 				9D07026B221A4FCC00E8E823 /* FilmXmlTool.swift in Sources */,
 				9D07026E221A544000E8E823 /* TestingContentViewController.swift in Sources */,
+				9D7EC534221C4B840084889F /* FilmDelegate.swift in Sources */,
 				9D26FAC2221A38BF006C11F9 /* DirectorsContentViewController.swift in Sources */,
 				9D26FA9022189F52006C11F9 /* ViewController.swift in Sources */,
 				9D26FABA22189FB4006C11F9 /* Film.swift in Sources */,
